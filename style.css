@@ -1,0 +1,699 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+body {
+    background-image: url('./bg.jpeg');
+
+}
+
+/*navigation*/
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 10px;
+    background-color: #0f0f0f;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand img {
+    margin-top: 5px;
+    height: 50px;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: rgb(24, 223, 210);
+    font-weight: 900;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 50px;
+
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: red;
+    border-radius: 10px;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    color: white;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: flex-start;
+    height: max-content;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+/*profile below navigation bar*/
+.profile h1 {
+    /* border: 2px solid red;*/
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+.profile h1 span {
+    color: aqua;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.profile .typing {
+    max-width: 400px;
+    box-shadow: 10px 10px 30px rgb(24, 223, 210);
+}
+
+.typing h2 {
+
+    font-size: 30px;
+    margin-top: 10px;
+    padding-left: 60px;
+    /* border: 1px solid violet;*/
+}
+
+/*home para*/
+
+.home {
+    max-width: 95%;
+    margin: 0 auto;
+    border: 0px solid red;
+}
+
+.home p {
+    max-width: 60%;
+    margin: 30px 0px 0px 60px;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: justify;
+
+}
+
+.home .second-para {
+    position: relative;
+    top: -700px;
+    border: 0px solid red;
+    max-width: 50%;
+    padding: 17px;
+    color: black;
+    box-shadow: 2px 2px 20px rgb(168, 173, 168);
+}
+
+/*home image*/
+
+.home img {
+    margin: 50px auto;
+    min-height: 400px;
+    box-shadow: 2px 2px 10px rgb(168, 173, 168);
+    border-radius: 20px;
+}
+
+/*project*/
+
+.project {
+    border: 0px solid red;
+    position: relative;
+    top: -450px;
+}
+
+.project h1 {
+    text-align: center;
+    color: rgb(24, 223, 210);
+}
+
+/*first project*/
+
+.project .pro-1 img {
+    height: 300px;
+    max-width: 30%;
+    box-shadow: 2px 2px 20px rgb(168, 173, 168);
+}
+
+.project .pro-1 {
+    margin-top: 60px;
+    display: flex;
+    padding: 90px 0px 0px 300px;
+}
+
+/*wording in project1*/
+.pro-1 .one {
+    border: 0px solid red;
+    max-width: 40%;
+    font-size: 23px;
+    margin-left: 60px;
+}
+
+/*second project*/
+
+.project .pro-2 img {
+    height: 300px;
+    max-width: 30%;
+    box-shadow: 2px 2px 20px rgb(168, 173, 168);
+}
+
+.project .pro-2 {
+    margin-top: 60px;
+    display: flex;
+    padding: 90px 0px 0px 300px;
+}
+
+/*wording in project2*/
+.pro-2 .two {
+    border: 0px solid red;
+    max-width: 40%;
+    font-size: 23px;
+    margin-left: 60px;
+}
+
+/*third project*/
+
+.project .pro-3 img {
+    height: 300px;
+    max-width: 30%;
+    box-shadow: 2px 2px 20px rgb(168, 173, 168);
+}
+
+.project .pro-3 {
+    margin-top: 60px;
+    display: flex;
+    padding: 90px 0px 0px 300px;
+}
+
+/*wording in project3*/
+.pro-3 .three {
+    border: 0px solid red;
+    max-width: 40%;
+    font-size: 23px;
+    margin-left: 60px;
+}
+
+/*fouth project*/
+
+.project .pro-4 img {
+    height: 300px;
+    max-width: 30%;
+    box-shadow: 2px 2px 20px rgb(168, 173, 168);
+}
+
+.project .pro-4 {
+    margin-top: 60px;
+    display: flex;
+    padding: 90px 0px 0px 300px;
+}
+
+/*wording in project2*/
+.pro-4 .four {
+    border: 0px solid red;
+    max-width: 40%;
+    font-size: 23px;
+    margin-left: 60px;
+}
+
+
+/*acievement*/
+
+.achievement {
+    position: relative;
+    top: -350px;
+}
+
+.achievement h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(24, 223, 210);
+
+}
+
+/* achievement box alignment*/
+.achieve {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    width: 90%;
+    border: 0px solid red;
+    gap: 20px;
+    margin: 50px auto;
+}
+
+.achievement .achieve .ach {
+
+    width: 100%;
+    /* Ensure container takes full width */
+    /* Adjust as per your layout */
+    height: 350px;
+    /* Let height adjust based on aspect ratio */
+    overflow: hidden;
+    /* Ensure image doesn't overflow container */
+    position: relative;
+    box-shadow: 10px 10px 15px rgb(132, 129, 129);
+}
+
+.responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    object-position: center;
+}
+
+/*
+.achievement .achieve .ach {
+    max-width: 100%;
+    height: 350px;
+   background-color: rgb(213, 213, 225);
+    border: 0px solid violet;
+    margin: 10px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 10px 10px 25px rgb(132, 129, 129);
+}*/
+
+/* achievement images spec*/
+
+.achievement .achieve .ach img {
+    border-radius: 20px;
+}
+
+/* achievement interrior wording */
+.achievement .achieve .ach .detail {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    max-width: 609px;
+    color: rgb(20, 18, 18);
+    min-height: 350px;
+    border: 0px solid red;
+    text-align: center;
+    transition: 2s;
+    border-radius: 20px;
+    margin-left: 3.3px;
+}
+
+.achievement .achieve .ach .detail h2 {
+    font-size: 35px;
+    padding: 40px;
+
+}
+
+.achievement .achieve .ach .detail p {
+    font-size: x-large;
+}
+
+/*hover effect*/
+.achievement .achieve .ach:hover .detail {
+    opacity: 1;
+    background-color: transparent;
+    transition: 2s;
+    backdrop-filter: blur(15px);
+}
+
+.achievement .achieve .ach:hover img {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+/*contact*/
+
+
+
+.contact {
+    padding: 25px 0;
+    position: relative;
+    top: -300px;
+}
+
+.contact .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: rgb(24, 223, 210);
+}
+
+.contact .heading h2 span {
+    color: #ff9100;
+}
+
+.contact .heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contact button.btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: rgb(24, 223, 210);
+    color: #000000;
+}
+
+.contact .title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(24, 223, 210);
+}
+
+.contact .title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.6;
+    margin: 0 0 40px;
+}
+
+.contact .content .info {
+    margin-top: 30px;
+}
+
+.contact .content .info i {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #02434b;
+    margin-right: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.contact .content .info h4 {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact .content .info h4 span {
+    font-size: 15px;
+    font-weight: 300;
+    color: #2C7865;
+}
+
+.contact .content .info .sm {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .AI {
+        width: 100%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    #home p {
+        margin: 30px auto;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 25px;
+        max-width: 80%;
+        color: white;
+    }
+
+    #home .second-para {
+        position: relative;
+        top: 0px;
+        box-shadow: 2px 2px 9px rgb(168, 173, 168);
+    }
+
+    /*home image*/
+
+    #home img {
+        margin: 20px auto;
+        border: 1px solid grey;
+        box-shadow: 2px 2px 10px rgb(168, 173, 168);
+        min-height: 300px;
+    }
+
+    /*project*/
+
+    .project {
+        position: relative;
+        top: 0px;
+    }
+
+    /*project1*/
+    #project .pro-1 img {
+        height: 200px;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        border: 0px solid red;
+    }
+
+    #project .pro-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px 0px 0px;
+    }
+
+    /*project1 word detail*/
+    #project .pro-1 .one {
+        border: 0px solid red;
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /*project2*/
+    #project .pro-2 img {
+        height: 200px;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        border: 0px solid red;
+    }
+
+    #project .pro-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px 0px 0px;
+    }
+
+    /*project2 word detail*/
+    #project .pro-2 .two {
+        border: 0px solid red;
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /*project3*/
+    #project .pro-3 img {
+        height: 200px;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        border: 0px solid red;
+    }
+
+    #project .pro-3 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px 0px 0px;
+    }
+
+    /*project3 word detail*/
+    #project .pro-3 .three {
+        border: 0px solid red;
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /*project4*/
+    #project .pro-4 img {
+        height: 200px;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        border: 0px solid red;
+    }
+
+    #project .pro-4 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px 0px 0px;
+    }
+
+    /*project4 word detail*/
+    #project .pro-4 .four {
+        border: 0px solid red;
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /*acheievement*/
+    .achievement {
+        position: relative;
+        top: 0px;
+    }
+
+    #achieve {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin: 50px auto;
+    }
+
+
+    .achievement .achieve .ach .detail h2 {
+        font-size: 20px;
+        padding: 40px;
+    }
+
+    .achievement .achieve .ach .detail p {
+        font-size: large;
+    }
+
+    /* achievement image*/
+    .achievement .achieve .ach {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .responsive {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+
+    /*contact*/
+    .contact {
+        position: relative;
+        top: 0px;
+    }
+
+    /*footer*/
+
+    .footer h4 span {
+        color: #ff9100;
+
+    }
+
+    #footer h4 {
+        font-size: 7px;
+        line-height: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width:1030px) {
+    #home .second-para {
+        position: absolute;
+        top: 800px;
+        box-shadow: 2px 2px 9px rgb(168, 173, 168);
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .project {
+        position: relative;
+        top: 180px;
+    }
+}
+
+.footer {
+    padding-top: 50px; 
+}
+
+.footer h4 span {
+    color: #ff9100;
+}
+
+.footer h4 {
+    text-align: center;
+    line-height: 0px;
+}
+
+.footer h4 a {
+    text-decoration: none;
+    color: #ff9100;
+}
+
+.footer h4 a span {
+    color: rgb(24, 223, 210);
+}
